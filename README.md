@@ -4,34 +4,52 @@
 ## Tasks
 
 ### Mandatory tasks:
-0. Create a CreditCard class with the fields account number and current amount in the account.  
-   Add a method that allows you to charge the amount to your credit card  
-   Add a method that allows you to withdraw a certain amount from the card.   
-   Add a method that displays current card information.  
-   Write a program that creates three objects of the CreditCard class with the given account number and initial amount.  
-   Test script for verification:  
-     >Place money on the first two cards and withdraw from the third.  
-     >Display the current status of all three cards.  
+0. Write the “Shapes” class hierarchy.   
+   Shape -> Triangle -> Rectangle -> Circle.  
+   Implement the function for calculating the area for each type of figure and calculating the perimeter.  
+   Create an array of 5 shapes.   
+   Display the sum of the perimeter of all the shapes in the array.  
+
+1. Create the classes “Director”, “Worker”, “Accountant”.  
+   Implement an interface with a method that prints the job title and implement this method in the created classes.  
 ### Additional tasks:
-1. Create a class to describe a computer; this class should contain the following fields: cost, model (string type), RAM and HDD.  
-   You should create your own classes for the RAM and HDD fields.  
-   Classes for RAM and HDD must have a default constructor and a constructor with all parameters.  
-   The RAM class has fields "name" and "volume".  
-   The HDD class has the fields "name", "volume" and "type" (external or internal).  
-   The Computer class must have two constructors:  
-     >the first one - with the parameters cost and model  
-     >second - with all fields.  
+2. Create a system for document accounting.
+
+   Create a Register class that will have methods:  
+   - saving the document in the register  
+   - providing information about the document  
    
-   When creating a "computer" object using the first constructor, the RAM and HDD fields must be created using the default constructors.
-   In each of the classes, provide methods for displaying complete information (displaying all fields and all values).
-   Test script for verification:  
-     >create the object “computer 1” using the first constructor and display the information on the screen  
-     >create the object “computer 2” using the second constructor and display the information on the screen  
-2. Create a class that describes an ATM.  
-   The set of banknotes in the ATM must be specified by three properties: number of bills in denominations of 20, 50 and 100.  
-   Make methods for adding money to an ATM.  
-   Make a function that withdraws money, which accepts an amount of money and returns a Boolean value indicating the success of the operation.  
-   When withdrawing money, the function should print how many bills of what denomination the amount is issued.  
-   Create a constructor with three parameters - the number of banknotes of each denomination.
-### Extra credit task:
-3. Rewrite the additional task by adding a “type” field to the “computer” class and let this field be Enum (values: laptop or desktop).
+   The system can work with three types of documents:  
+   1. Contract for the supply of goods   
+      Contains fields:  
+      - Document Number  
+      - Product type  
+      - Number of goods  
+      - Document date  
+   
+   2. Contract with employee
+      Contains fields:
+      - Document Number
+      - Document date
+      - Contract end date
+      - Employee name
+   
+   3. Financial invoice
+   Contains fields:
+      - Total amount for the month
+      - Document date
+      - Document Number
+      - Department code         
+     
+   <br/>  
+
+   - The register class must contain an array within itself, and when adding a document to the register, this added document must be added to the array;  
+   - The array for the register class must be size 10;  
+   - For Document Date fields, use the Date data type;  
+   - In the method of providing information about a document, information about the document passed as an input parameter should be displayed.  
+     (to do this, in the class that describes the document, you should override the toString() method);
+   - Each class for describing documents must contain a constructor with and without parameters;
+   - To simulate the operation of the system, create a Main class that will contain only one method public static void main
+     In this method, write code to create each of the document types, add them to the register, and display the document information;
+   - Place all classes in packages
+   - When completing the task, use the concepts of interfaces and abstract classes.

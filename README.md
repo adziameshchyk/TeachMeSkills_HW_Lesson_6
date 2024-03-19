@@ -27,14 +27,14 @@
       - Number of goods  
       - Document date  
    
-   2. Contract with employee
+   2. Contract with employee  
       Contains fields:
       - Document Number
       - Document date
       - Contract end date
       - Employee name
    
-   3. Financial invoice
+   3. Financial invoice  
    Contains fields:
       - Total amount for the month
       - Document date

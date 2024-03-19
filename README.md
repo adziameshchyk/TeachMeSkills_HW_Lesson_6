@@ -49,7 +49,7 @@
    - In the method of providing information about a document, information about the document passed as an input parameter should be displayed.  
      (to do this, in the class that describes the document, you should override the toString() method);
    - Each class for describing documents must contain a constructor with and without parameters;
-   - To simulate the operation of the system, create a Main class that will contain only one method public static void main
+   - To simulate the operation of the system, create a Main class that will contain only one method public static void main  
      In this method, write code to create each of the document types, add them to the register, and display the document information;
    - Place all classes in packages
    - When completing the task, use the concepts of interfaces and abstract classes.

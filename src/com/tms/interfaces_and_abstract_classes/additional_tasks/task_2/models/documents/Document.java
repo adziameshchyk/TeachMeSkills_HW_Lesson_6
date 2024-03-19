@@ -5,8 +5,8 @@ import java.util.Date;
 public abstract class  Document {
 
     static int documentIdCount = 1;
-    int documentId;
-    Date documentDate;
+    public int documentId;
+    public Date documentDate;
 
     public Document() {
     }

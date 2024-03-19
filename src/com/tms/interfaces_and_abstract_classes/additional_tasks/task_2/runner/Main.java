@@ -62,9 +62,9 @@ public class Main {
         register.saveDocumentInRegister(managerContract);
         register.saveDocumentInRegister(financialInvoice);
 
-        register.getInformationAboutDocument(cableSupplyContract);
-        register.getInformationAboutDocument(managerContract);
-        register.getInformationAboutDocument(financialInvoice);
+        register.getInformationAboutDocument(1);
+        register.getInformationAboutDocument(2);
+        register.getInformationAboutDocument(3);
     }
 
 }
